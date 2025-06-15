@@ -8,7 +8,7 @@ end
 
 function filter_even_numbers(v)
 	local new_v = {}
-	for n in pairs(v) do
+	for i, n in ipairs(v) do
 		if n % 2 == 0 then
 			new_v[#new_v + 1] = n
 		end
