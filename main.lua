@@ -34,8 +34,6 @@ function main()
 	print("Digite o número da estratégia a ser aplicada:")
 	local strategy_type = tonumber(io.read())
 
-	apply_strategy(strategy_type, v)
-
 	local result = apply_strategy(strategy_type, v)
 
 	if result then
