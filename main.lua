@@ -18,7 +18,7 @@ function filter_even_numbers(v)
     local new_v = {}
     for i, n in ipairs(v) do
         if n % 2 == 0 then
-            table.insert(new_v, n)
+            new_v[#new_v + 1] = n
         end
     end
     return new_v
