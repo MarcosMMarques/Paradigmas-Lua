@@ -34,7 +34,16 @@ function main()
 	print("Digite o número da estratégia a ser aplicada:")
 	local strategy_type = tonumber(io.read())
 
-	apply_strategy(estrategy_type, v)
+	apply_strategy(strategy_type, v)
+
+	local result = apply_strategy(strategy_type, v)
+
+	if result then
+		print("Vetor resultante após aplicar a estratégia:")
+		for i, n in ipairs(result) do
+			print(n)
+		end
+	end
 end
 
 main()
