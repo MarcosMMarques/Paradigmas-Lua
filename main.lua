@@ -1,7 +1,7 @@
 function apply_strategy(strategy_type, v)
 	-- if estrategy_type == 1 then
 	-- call the specify function
-	if strategy_type == 3 then
+	if strategy_type == 4 then
 		return filter_even_numbers(v)
 	end
 end
