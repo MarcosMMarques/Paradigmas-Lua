@@ -32,7 +32,7 @@ function main()
 	end
 
 	print("Digite o número da estratégia a ser aplicada:")
-	local estrategy_type = tonumber(io.read())
+	local strategy_type = tonumber(io.read())
 
 	apply_strategy(estrategy_type, v)
 end
