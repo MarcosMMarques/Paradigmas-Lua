@@ -1,0 +1,9 @@
+-- util.lua
+local descendingorder = {}
+
+function util.descendingorder(v)
+    table.sort(v, function(a, b) return a > b end)
+    return v
+end
+
+return descendingorder
