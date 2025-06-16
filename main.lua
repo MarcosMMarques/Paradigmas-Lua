@@ -1,3 +1,5 @@
+local filter_even_numbers = require("estrategia.filter_even_numbers")
+
 function apply_strategy(strategy_type, v)
     if strategy_type == 1 then 
         return ascendingorder(v)
