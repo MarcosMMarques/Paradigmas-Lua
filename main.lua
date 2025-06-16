@@ -1,8 +1,10 @@
+local descendingorder = require("estrategia.descendingorder")
+
 function apply_strategy(strategy_type, v)
     if strategy_type == 1 then 
         return ascendingorder(v)
     elseif strategy_type == 2 then
-        return descendingorder(v)
+        return descendingorder.run(v)
     elseif strategy_type == 4 then
         return filter_even_numbers(v)
     else
@@ -11,10 +13,7 @@ function apply_strategy(strategy_type, v)
     end
 end
 
-function ascendingorder(v)
-    table.sort(v)
-    return v
-end
+
 
 function descendingorder(v)
     table.sort(v, function(a, b) return a > b end)
