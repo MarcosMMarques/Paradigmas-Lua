@@ -4,7 +4,7 @@ function apply_strategy(strategy_type, v)
     if strategy_type == 1 then 
         return ascendingorder(v)
     elseif strategy_type == 2 then
-        return descendingorder.run(v)
+        return descendingorder(v)
     elseif strategy_type == 4 then
         return filter_even_numbers(v)
     else
@@ -15,10 +15,7 @@ end
 
 
 
-function descendingorder(v)
-    table.sort(v, function(a, b) return a > b end)
-    return v
-end
+
 
 function filter_even_numbers(v)
     local new_v = {}

@@ -5,6 +5,8 @@ Repository for the "Paradigms" course work from university.
 
 Function 1: Return an ascending sorted table
 
+Function 2: Return an descending sorted table
+
 Function 4: Return a new table with only even numbers from original table filtered
 
 
