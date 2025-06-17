@@ -56,6 +56,32 @@ After Processed, the table in ascending order is returned: [5,4,3,2,1]
 Author: @gabrielramos731
 
 
+### Function 3: Remove duplicates numbers
+
+```lua
+local M = {}
+function M.remover_duplicatas(lista)
+    local set = {}
+    local resultado = {}
+
+    for _, valor in ipairs(lista) do
+        if not set[valor] then
+            set[valor] = true
+            table.insert(resultado, valor)
+        end
+    end
+
+    return resultado
+end
+
+return M
+```
+
+Return a new table with only the numbers that appear once time. Example:
+Table : [1,2,3,3,4,4,5]
+
+After Processed, the new table returned is: [1,2,3,4,5]
+
 ### Function 4: Filter Even Numbers
 
 Function:
