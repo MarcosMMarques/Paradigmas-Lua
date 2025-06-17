@@ -14,11 +14,6 @@ function apply_strategy(strategy_type, v)
 	end
 end
 
-function ascendingorder(v)
-	table.sort(v)
-	return v
-end
-
 function main()
 	print("Quantos números você quer digitar?")
 	local n = tonumber(io.read())
