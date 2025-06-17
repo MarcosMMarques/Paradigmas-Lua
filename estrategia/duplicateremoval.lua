@@ -1,19 +1,15 @@
--- Remove duplicate nums 
+-- Remove duplicate nums
 
-local M = {}
+return function(lista)
+	local set = {}
+	local resultado = {}
 
-function M.remover_duplicatas(lista)
-    local set = {}
-    local resultado = {}
+	for _, valor in ipairs(lista) do
+		if not set[valor] then
+			set[valor] = true
+			table.insert(resultado, valor)
+		end
+	end
 
-    for _, valor in ipairs(lista) do
-        if not set[valor] then
-            set[valor] = true
-            table.insert(resultado, valor)
-        end
-    end
-
-    return resultado
+	return resultado
 end
-
-return M
