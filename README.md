@@ -17,7 +17,21 @@ lua main.lua
 
 ## Functions Explaining:
 
-Function 1: Return an ascending sorted table
+### Function 1: Return an ascending sorted table
+
+Function:
+```lua
+return function(v)
+    table.sort(v)
+    return v
+end
+```
+Return a ascending order table. Example:
+
+Table : [5,4,3,2,1]
+
+After Processed, the table in ascending order is returned: [1,2,3,4,5]
+Author: @PedroHenriqueBRO
 
 Function 2: Return an descending sorted table
 
