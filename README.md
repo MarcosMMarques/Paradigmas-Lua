@@ -40,7 +40,21 @@ Table : [5,4,3,2,1]
 After Processed, the table in ascending order is returned: [1,2,3,4,5]
 Author: @PedroHenriqueBRO
 
-Function 2: Return an descending sorted table
+### Function 2: Return an descending sorted table
+
+```lua
+return function (v)
+    table.sort(v, function(a, b) return a > b end)
+    return v
+end
+```
+Return a descending order table. Example:
+
+Table : [2,4,1,3,5]
+
+After Processed, the table in ascending order is returned: [5,4,3,2,1]
+Author: @gabrielramos731
+
 
 ### Function 4: Filter Even Numbers
 
